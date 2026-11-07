@@ -1,0 +1,27 @@
+# Build output
+/target/
+
+# IDE files
+/.idea/
+/*.iml
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and temp
+*.log
+*.tmp
+tmp/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Local runtime artifacts
+*.class
+
+#Tutorial flow
+*.md

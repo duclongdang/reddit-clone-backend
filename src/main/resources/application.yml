@@ -1,0 +1,31 @@
+spring:
+  config:
+    import: optional:file:.env[.properties]
+  application:
+    name: reddit-clone-backend
+  profiles:
+    default: local
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+  flyway:
+    enabled: true
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+
+jwt:
+  secret: ${JWT_SECRET}
+  expiration-ms: ${JWT_EXPIRATION_MS}
+  refresh-expiration-ms: ${JWT_REFRESH_EXPIRATION_MS}
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org.flywaydb: DEBUG
+    org.springframework.security: DEBUG
+    com.yourname.redditclone: DEBUG

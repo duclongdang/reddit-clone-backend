@@ -1,0 +1,1 @@
+package com.yourname.redditclone.domain.community; public class Community {}

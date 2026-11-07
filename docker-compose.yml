@@ -1,6 +1,6 @@
 services:
   postgres:
-    image: postgres:17
+    image: docker.io/library/postgres:17
     container_name: reddit-clone-postgres
     environment:
       POSTGRES_DB: reddit_clone
@@ -17,7 +17,7 @@ services:
       retries: 10
 
   redis:
-    image: redis:7-alpine
+    image: docker.io/library/redis:7-alpine
     container_name: reddit-clone-redis
     ports:
       - "6379:6379"

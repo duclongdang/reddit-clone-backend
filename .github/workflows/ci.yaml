@@ -1,18 +1,30 @@
 #key: value
 name: reddit-clone-backend
 
+on:
+  push:
+     branches: [main, develop]
+  pull_request:
+     branches: [main]
+
+permissions:
+  contents: read
 # This is a basic workflow to help you get started with Actions
 jobs:
   build:
     runs-on: ubuntu-latest
 
   #
-  steps:
-    - name: Bước 1
-      run: |
-        echo "Executing step 1"
-    - name: Bước 2
-      run: |
-        echo "Executing step 2"
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: maven
 
-branches: [main, develop]
+      - name: Check format
+        run: mvn -B spotless:check
+
+      - name: Build and test
+        run : mvn -B verify

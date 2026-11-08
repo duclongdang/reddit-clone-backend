@@ -1,1 +1,3 @@
-package com.yourname.redditclone.domain.moderation; public interface ReportRepository {}
+package com.yourname.redditclone.domain.moderation;
+
+public interface ReportRepository {}

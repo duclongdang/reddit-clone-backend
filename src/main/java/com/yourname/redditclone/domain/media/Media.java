@@ -1,1 +1,3 @@
-package com.yourname.redditclone.domain.media; public class Media {}
+package com.yourname.redditclone.domain.media;
+
+public class Media {}

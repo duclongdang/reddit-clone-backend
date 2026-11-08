@@ -1,1 +1,3 @@
-package com.yourname.redditclone.domain.moderation; public class Report {}
+package com.yourname.redditclone.domain.moderation;
+
+public class Report {}

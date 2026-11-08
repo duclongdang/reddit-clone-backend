@@ -1,1 +1,3 @@
-package com.yourname.redditclone.domain.community; public interface CommunityMemberRepository {}
+package com.yourname.redditclone.domain.community;
+
+public interface CommunityMemberRepository {}

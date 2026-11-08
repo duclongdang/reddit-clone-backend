@@ -1,1 +1,3 @@
-package com.yourname.redditclone.domain.notification; public interface NotificationRepository {}
+package com.yourname.redditclone.domain.notification;
+
+public interface NotificationRepository {}

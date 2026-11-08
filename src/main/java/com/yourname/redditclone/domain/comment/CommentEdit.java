@@ -1,1 +1,3 @@
-package com.yourname.redditclone.domain.comment; public class CommentEdit {}
+package com.yourname.redditclone.domain.comment;
+
+public class CommentEdit {}

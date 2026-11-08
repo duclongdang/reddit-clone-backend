@@ -1,1 +1,3 @@
-package com.yourname.redditclone.domain.tag; public class Tag {}
+package com.yourname.redditclone.domain.tag;
+
+public class Tag {}

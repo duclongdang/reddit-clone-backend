@@ -1,9 +1,6 @@
-spring:
-  datasource:
-    url: ${DATABASE_URL}
-    username: ${DATABASE_USERNAME}
-    password: ${DATABASE_PASSWORD}
-  data:
-    redis:
-      host: ${REDIS_HOST:localhost}
-      port: ${REDIS_PORT:6379}
+# Profile cho mọi server đã deploy (dev, staging, prod).
+# Khác biệt giữa các server nằm ở GIÁ TRỊ biến môi trường, không nằm ở file này.
+logging:
+  level:
+    root: INFO
+    com.yourname.redditclone: INFO

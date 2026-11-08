@@ -1,1 +1,3 @@
-package com.yourname.redditclone.domain.moderation; public class ModerationController {}
+package com.yourname.redditclone.domain.moderation;
+
+public class ModerationController {}

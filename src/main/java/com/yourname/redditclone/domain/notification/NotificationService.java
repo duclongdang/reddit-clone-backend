@@ -1,1 +1,3 @@
-package com.yourname.redditclone.domain.notification; public class NotificationService {}
+package com.yourname.redditclone.domain.notification;
+
+public class NotificationService {}

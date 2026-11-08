@@ -8,26 +8,32 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {
-    private final AuthService authService;
+  private final AuthService authService;
 
-    public AuthController(AuthService authService) {
-        this.authService = authService;
-    }
+  public AuthController(AuthService authService) {
+    this.authService = authService;
+  }
 
-    @PostMapping("/login")
-    public String login() { return "login"; }
-    @PostMapping("/register")
-    public String register() { return "register"; }
-    @PostMapping("/refresh")
-    public ApiResponse<AuthService.TokenPair> refresh(@Valid @RequestBody RefreshRequest request) {
-        return ApiResponse.ok(authService.refresh(request.refreshToken()));
-    }
+  @PostMapping("/login")
+  public String login() {
+    return "login";
+  }
 
-    @PostMapping("/logout")
-    public ApiResponse<Void> logout(@Valid @RequestBody RefreshRequest request) {
-        authService.logout(request.refreshToken());
-        return ApiResponse.ok(null);
-    }
+  @PostMapping("/register")
+  public String register() {
+    return "register";
+  }
 
-    public record RefreshRequest(@NotBlank String refreshToken) {}
+  @PostMapping("/refresh")
+  public ApiResponse<AuthService.TokenPair> refresh(@Valid @RequestBody RefreshRequest request) {
+    return ApiResponse.ok(authService.refresh(request.refreshToken()));
+  }
+
+  @PostMapping("/logout")
+  public ApiResponse<Void> logout(@Valid @RequestBody RefreshRequest request) {
+    authService.logout(request.refreshToken());
+    return ApiResponse.ok(null);
+  }
+
+  public record RefreshRequest(@NotBlank String refreshToken) {}
 }

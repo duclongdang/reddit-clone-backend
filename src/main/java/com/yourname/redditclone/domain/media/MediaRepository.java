@@ -1,1 +1,3 @@
-package com.yourname.redditclone.domain.media; public interface MediaRepository {}
+package com.yourname.redditclone.domain.media;
+
+public interface MediaRepository {}

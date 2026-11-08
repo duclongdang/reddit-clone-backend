@@ -1,1 +1,3 @@
-package com.yourname.redditclone.domain.comment; public class CommentController {}
+package com.yourname.redditclone.domain.comment;
+
+public class CommentController {}

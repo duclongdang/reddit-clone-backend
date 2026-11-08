@@ -1,1 +1,3 @@
-package com.yourname.redditclone.domain.comment; public interface CommentRepository {}
+package com.yourname.redditclone.domain.comment;
+
+public interface CommentRepository {}

@@ -1,1 +1,3 @@
-package com.yourname.redditclone.domain.community; public class CommunityModerator {}
+package com.yourname.redditclone.domain.community;
+
+public class CommunityModerator {}

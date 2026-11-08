@@ -1,1 +1,3 @@
-package com.yourname.redditclone.domain.tag; public interface TagRepository {}
+package com.yourname.redditclone.domain.tag;
+
+public interface TagRepository {}

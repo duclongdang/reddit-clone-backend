@@ -1,1 +1,3 @@
-package com.yourname.redditclone.domain.community; public class CommunityMember {}
+package com.yourname.redditclone.domain.community;
+
+public class CommunityMember {}

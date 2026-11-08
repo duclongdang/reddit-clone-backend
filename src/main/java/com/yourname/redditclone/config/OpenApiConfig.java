@@ -4,5 +4,5 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class OpenApiConfig {
-    // OpenAPI custom metadata can be configured here.
+  // OpenAPI custom metadata can be configured here.
 }
